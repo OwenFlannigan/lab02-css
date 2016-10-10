@@ -34,9 +34,13 @@ nav {
 nav ul {
   padding-left: 15px;
   margin-bottom: 0;
+  margin-top: 0;
+  padding: 5px;
 }
 nav li {
+  display: inline;
   font-variant: small-caps;
+  list-style-type: none;
 }
 nav a {
   transition: all 0.3s;
@@ -55,8 +59,10 @@ header {
   padding-top: 3em;
   padding-right: 1em;
   background-image: url(../img/background-sm.jpg);
+  background-size: cover; 
   min-height: 550px;
   color: #FFF;
+  text-align: right;
 }
 header h1 {
   font-size: 3em;
@@ -67,10 +73,15 @@ section {
   padding-bottom: 1em;
 }
 
+section:nth-child(odd) {
+  background: white;
+}
+
 #headline {
   font-size: 1.25em;
   padding-top: 3em;
   padding-bottom: 3em;
+  text-align: center;
 }
 #headline svg {
   display: inline-block;
@@ -83,6 +94,11 @@ section {
   text-align: center;
 }
 
+#cafe a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
 dd {
   margin-left: 1em;
   font-style: italic;
@@ -93,6 +109,11 @@ dd {
   margin-left: 1em;
 }
 
+#story {
+  padding: 10px;
+  overflow: hidden;
+}
+
 footer {
   padding-top: 1em;
   padding-bottom: 0.5em;
@@ -100,6 +121,12 @@ footer {
   background-color: #afb3c2;
 }
 
-#headline p {
-  text-align: left;
+footer p:last-child {
+  text-align: right;
 }
+
+#menu > div{
+  padding-left: 15%; 
+}
+
+
